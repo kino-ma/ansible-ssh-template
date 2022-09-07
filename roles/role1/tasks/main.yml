@@ -1,0 +1,4 @@
+- name: Test
+  become: true
+  shell: |
+    whoami

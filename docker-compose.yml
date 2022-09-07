@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    build: "."
+    volumes:
+      - ".:/app"
+      - "${SSH_AUTH_SOCK:-/dev/null}:${SSH_AUTH_SOCK:-/dev/null}"
+    environment:
+      - "SSH_AUTH_SOCK=${SSH_AUTH_SOCK-}"
