@@ -1,7 +1,7 @@
 DOCKER_COMPOSE := docker-compose
 DOCKER_COMPOSE_RUN := $(DOCKER_COMPOSE) run --rm app
 
-.PHONY: all build-container run encrpt
+.PHONY: all build-container run encrypt
 
 all: id_ed25519 encrypt run
 
